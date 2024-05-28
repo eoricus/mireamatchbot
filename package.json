@@ -1,0 +1,23 @@
+{
+  "name": "mirea_match_bot",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "scripts": {
+    "start": "ts-node-dev --poll -r tsconfig-paths/register src/index",
+    "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@puregram/callback-data": "^1.2.3",
+    "@puregram/hear": "^2.1.0-rc.1",
+    "@puregram/prompt": "^1.2.0",
+    "colors": "^1.4.0",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "puregram": "^2.26.1",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0"
+  }
+}
